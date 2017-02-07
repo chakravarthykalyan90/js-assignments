@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js14</title>
+
+<script type="text/javascript">
+      
+    var count=0
+
+	function changeCount(x){
+		if (count==0){
+			x.src="https://thechive.files.wordpress.com/2016/07/5cac62b3c3b07cc981cc080d1364adc0.jpg?quality=85&strip=info&w=600&h=443&crop=1";
+			count=1
+		}
+		else if(count==1){
+			x.src="http://images.complex.com/complex/image/upload/c_limit,w_680/f_auto,fl_lossy,pg_1,q_auto/fbtnyxyfohih5svauz0w.jpg";
+			count=2
+		}
+		else if(count==2){
+			x.src="http://cdn3-www.cattime.com/assets/uploads/gallery/top-25-grumpy-cat-memes/015_best-Grumpy-Cat-memes.jpg";
+			count=3
+        }
+        if(count==3){
+			x.src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSm4OYFAHIvom9LAGyxATx_LBXZlQct6QfvNOoiC4YPs7v6J0gM";
+			count=4
+		}
+	}
+</script>
+</head>
+<body>
+	
+<img src="http://www.zwani.com/graphics/hello_funny/images/56467.jpg" onclick="changeCount(this)" width="400px" height="400px">
+
+</body>
+</html>

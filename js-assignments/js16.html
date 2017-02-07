@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js16</title>
+</head>
+<body >
+<script type="text/javascript">
+        var count=1;
+        var stop= setInterval(function(){
+        	count++;
+        	console.log("function stop called")
+        	document.getElementById("image"+((count-1)%6)).src="http://www.iconsdb.com/icons/download/black/circle-512.gif";
+        	document.getElementById("image"+(count%6)).src="http://media-cache-ak0.pinimg.com/736x/7c/7a/e1/7c7ae1202d876ec5f4bee7cd99711414.jpg"},1000);
+
+	    
+        function stopFunction(){
+             clearInterval(stop);
+             console.log("error checking")
+        }
+
+
+        function startFunction(){
+        	stop=setInterval(function(){
+        	count++;
+        	console.log("function stop called")
+        	document.getElementById("image"+((count-1)%6)).src="http://www.iconsdb.com/icons/download/black/circle-512.gif";
+        	document.getElementById("image"+(count%6)).src="http://media-cache-ak0.pinimg.com/736x/7c/7a/e1/7c7ae1202d876ec5f4bee7cd99711414.jpg"},1000);
+
+        }
+        
+</script>
+
+
+
+<div >
+
+<table >
+
+
+<tr valign="top" align="center"><td>
+<img src="http://www.iconsdb.com/icons/download/black/circle-512.gif" height="100px" width="100px" id="image1" onmouseover="stopFunction()" onmouseout="startFunction()" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="http://www.iconsdb.com/icons/download/black/circle-512.gif" height="100px" width="100px" id="image2" onmouseover="stopFunction()" onmouseout="startFunction()">
+</td></tr>
+
+<tr valign="top" align="center"><td>
+&nbsp;<br><br>
+</td></tr>
+
+
+<tr valign="top" align="center"><td>
+<img src="http://www.iconsdb.com/icons/download/black/circle-512.gif" height="100px" width="100px" id="image0" onmouseover="stopFunction()" onmouseout="startFunction()">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="http://www.iconsdb.com/icons/download/black/circle-512.gif" height="100px" width="100px" id="imageCenter" onmouseover="stopFunction()" onmouseout="startFunction()">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="http://www.iconsdb.com/icons/download/black/circle-512.gif" height="100px" width="100px" id="image3" onmouseover="stopFunction()" onmouseout="startFunction()" >
+</td></tr>
+
+<tr valign="top" align="center"><td>
+&nbsp;<br><br>
+</td></tr>
+
+
+
+<tr valign="top" align="center"><td>
+<img src="http://www.iconsdb.com/icons/download/black/circle-512.gif" height="100px" width="100px" id="image5" onmouseover="stopFunction()" onmouseout="startFunction()">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="http://www.iconsdb.com/icons/download/black/circle-512.gif" height="100px" width="100px" id="image4" onmouseover="stopFunction()" onmouseout="startFunction()">
+</td></tr>
+
+
+</table>
+
+</div>
+
+</body>
+</html>

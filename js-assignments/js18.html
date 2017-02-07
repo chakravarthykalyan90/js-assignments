@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js18</title>
+</head>
+<body onunload="closeWindow()">
+<script type="text/javascript">
+	var subWindow1, subWindow2, subWindow3, subWindow4, subWindow5, 
+	     window6;
+	var randomTop= Math.floor(Math.random()*700);
+	var randomLeft=Math.floor(Math.random()*700);
+	var centerWidth=screen.width/2-200/2;
+	var centerHeight=screen.height/2-200/2;
+
+
+function openWindows(){
+	subWindow1=window.open("https://www.google.co.in/?gws_rd=ssl","window1","width=200,height=200,top=0,left=0");
+    subWindow2=window.open("https://www.google.co.in/?gws_rd=ssl","window2","width=200,height=200,top=0,left=4000");
+	subWindow3=window.open("https://www.google.co.in/?gws_rd=ssl","window3","width=200,height=200,top=5000,left=4000");
+	subWindow4=window.open("https://www.google.co.in/?gws_rd=ssl","window4","width=200,height=200,top=5000,left=0");
+	subWindow5=window.open("https://www.google.co.in/?gws_rd=ssl","window5","width=200,height=200,top="+randomTop+",left="+randomLeft);
+	subWindow6=window.open("https://www.google.co.in/?gws_rd=ssl","window6","width=200,height=200,top="+centerHeight+",left="+centerWidth);
+
+}
+
+function closeWindow(){
+    subWindow1.close();
+    subWindow2.close();
+    subWindow3.close();
+    subWindow4.close();
+    subWindow5.close();
+    subWindow6.close();
+}
+</script>
+<a onclick="openWindows()">
+   <img src="https://i.kinja-img.com/gawker-media/image/upload/s--pEKSmwzm--/c_scale,fl_progressive,q_80,w_800/1414228815325188681.jpg">
+</a>
+
+</body  >
+</html>

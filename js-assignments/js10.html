@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> js10</title>
+</head>
+<body>
+   <img src="https://cdn1.iconfinder.com/data/icons/emoticons-6/100/smiley-1-512.png" height="100px" width="100px">
+   <img src="https://cdn1.iconfinder.com/data/icons/emoticons-6/100/smiley-1-512.png" height="100px" width="100px">
+   <img src="https://cdn1.iconfinder.com/data/icons/emoticons-6/100/smiley-1-512.png" height="100px" width="100px"> <br>
+   <img onmouseover="changeimage(this)"
+       src="https://cdn1.iconfinder.com/data/icons/emoticons-6/100/smiley-1-512.png" 
+       onmouseout="orginalImage(this)" height="100px" width="100px">
+       
+
+<script type="text/javascript">
+	function changeimage(image){
+		for (i=0; i<3;i++){
+			window.document.images[i].src='https://s-media-cache-ak0.pinimg.com/236x/66/f1/a9/66f1a9d5a8de54bc5494b994a2caf94c.jpg'
+		}
+	}
+	function orginalImage(image){
+		for (i=0; i<3;i++){
+			window.document.images[i].src="https://cdn1.iconfinder.com/data/icons/emoticons-6/100/smiley-1-512.png"
+		}
+	}
+
+</script>
+
+</body>
+</html>
